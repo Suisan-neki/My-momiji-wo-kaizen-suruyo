@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0157)https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cC23092EA-BA44-6086-9ACA-7A74F7420160_kCE048863-B330-92E0-4B3F-84C0A9DFDA34 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>ポータル</title>
+        <link rel="SHORTCUT ICON" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/theme/default/image/favicon.ico">
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
+
+        <title>ポータル</title>
+        <link rel="stylesheet" href="./StyleSheet.css" type="text/css">
+        <script type="text/javascript" src="./ScriptColor.js"></script>
+        <script type="text/javascript" src="./Script.js"></script>
+        <script language="JavaScript" type="text/javascript">
+        
+            function doMenu() {
+                document.TopMenuForm._eventId.value='menu';
+                document.TopMenuForm._flowExecutionKey.value='_cC23092EA-BA44-6086-9ACA-7A74F7420160_kCE048863-B330-92E0-4B3F-84C0A9DFDA34';
+                document.TopMenuForm.target = '_top';
+                document.TopMenuForm.submit();
+                return;
+            }
+            
+            function doLogout() {
+                document.LogoutForm._flowId.value = 'USW0009100-flow';
+                document.LogoutForm.target = '_top';
+                document.LogoutForm.submit();
+                return;
+            }
+            
+            //すべてのポートレット(IFRAME)読み込み後にtitleをセットする.
+            //window.onload = function(){ 
+            //    top.document.title = "[Myもみじ]" + document.title ;
+            //}            
+
+            function zenbunSearch() {
+                var href_str = "/campusweb/campussquare.do?"
+                    + "&_flowId=KJW0001100-flow"
+                    + "&_campus_portal=zenbun";
+
+                SubWin=window.open(href_str,"portalSubWin4",
+                "width=900,height=900,location=0,menubar=0,scrollbars=1,,toolbar=1");
+                SubWin.focus();
+                return false;
+             }
+
+            function callSubmitGenreIkkatsuKidokuForGenre(genrenm,keijitype,genrecd) {
+                if(confirm(genrenm + 'を既読に変更します。')) {
+                    document.referForm.keijitype.value = keijitype;
+                    document.referForm.genrecd.value = genrecd;
+                    document.referForm._eventId.value = 'genreIkkatsuKidoku';
+                    document.referForm.submit();
+                }
+                return false;
+            }
+            
+        </script>
+    </head>
+    <body marginwidth="0" marginheight="0">
+        
+        
+        
+        <div id="portalLeft">
+            
+             <h1 class="portalkeiji">
+                <table style="padding-top: 0px; padding-bottom: 0px;">
+                    <tbody><tr>
+                        <td width="90%">
+                            掲示
+                        </td>
+                        <td width="10%" align="right">
+                            <input type="button" value="全文検索へ" onclick="zenbunSearch();" class="portalkeiji">
+                        </td>
+                    </tr>
+                </tbody></table>
+            </h1>
+            
+                
+            	
+        		
+	                
+            		
+       				
+            		
+       				
+		                <iframe class="portal" src="./campussquare(4).html" height="440" frameborder="0" id="KJStudent">
+		                    フレーム未対応のブラウザでは使用できません。
+		                </iframe>
+					
+				
+            
+            
+        </div>
+        <div id="portalLeft">
+            
+            
+            <h1 class="portal">休講・補講・教室変更(本日以降の情報)</h1>
+            
+	            
+	            <iframe class="portal" src="./campussquare(5).html" height="223" frameborder="0" id="KhAll">
+	                フレーム未対応のブラウザでは使用できません。
+	            </iframe>
+            
+            
+            
+            
+       		
+	            <h1 class="portal">アンケート</h1>
+	            
+	            
+	                
+	                <iframe class="portal" src="./campussquare(6).html" height="30" frameborder="0" scrolling="no" id="ENStudent">
+	                    フレーム未対応のブラウザでは使用できません。
+	                </iframe>
+	            
+	            
+            
+            
+            
+                
+                    <form id="keijiReferForm" name="referForm" method="post" action="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do">
+                        <input type="hidden" name="keijitype">
+                        <input type="hidden" name="genrecd">
+                        <input type="hidden" name="seqNo">
+                        <input type="hidden" name="_flowExecutionKey" value="_cC23092EA-BA44-6086-9ACA-7A74F7420160_kCE048863-B330-92E0-4B3F-84C0A9DFDA34">
+                        <input type="hidden" name="_eventId">
+                        <h1 class="portalkeiji">
+                            <table>
+                                <tbody><tr>
+                                    <td width="90%">
+                                        学長メッセージ/President's Messages
+                                    </td>
+                                    <td width="10%" align="right">
+                                         
+	                                        
+                                        
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </h1>
+                    </form>
+                
+            
+            
+                
+                    
+                    
+                       
+                        <iframe class="portal" src="./campussquare(7).html" height="108" frameborder="0" id="KJGenre">
+                            フレーム未対応のブラウザでは使用できません。
+                        </iframe>
+                    
+                
+            
+            
+        </div>
+
+        <div id="portalAll">
+            
+            <h1 class="portal">授業情報</h1>
+            
+            
+            <iframe class="portal" src="./campussquare(8).html" height="450" frameborder="0" id="JugyoHoho">
+                フレーム未対応のブラウザでは使用できません。
+            </iframe>
+            
+            
+        </div>
+        
+    
+</body></html>

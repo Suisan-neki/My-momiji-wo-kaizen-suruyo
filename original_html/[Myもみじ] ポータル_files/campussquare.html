@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0157)https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_c840D5AD3-F896-6A78-1B5A-30436C9B6C09_k64A3CC82-190F-81D3-4B00-8BF273B3BC1E -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        
+        <meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
+
+        
+        
+        <link rel="SHORTCUT ICON" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/theme/default/image/favicon.ico">
+        
+        
+        <meta name="format-detection" content="telephone=no">
+        
+        
+    
+         
+        <title>トップメニュー</title>
+        <link rel="stylesheet" href="./StyleSheet.css" type="text/css">
+        <script type="text/javascript" src="./ScriptColor.js"></script>
+        <script type="text/javascript" src="./Script.js"></script>
+        
+        
+        
+        
+        
+        <link rel="stylesheet" type="text/css" href="./jquery-ui-1.8.19.custom.css">
+        
+        
+        <script type="text/javascript" src="./jquery.min.js"></script>
+        <script type="text/javascript" src="./jquery-ui-1.8.19.custom.min.js"></script>
+        <script type="text/javascript" src="./portal_common.js"></script>
+        
+    <script language="JavaScript" type="text/javascript">
+            var session_time_out_timer = 0;
+            
+            
+            	
+            	
+		            var session_time_out = "30.0";
+            	
+            
+  
+            function checkTimeout() {
+                var minute_cnt = document.TopForm.time_cnt.value - 0;
+                if (minute_cnt < session_time_out) {
+                    var odd_time = session_time_out - minute_cnt;
+                    document.TopForm.timeout.value = odd_time;
+                    document.TopForm.time_cnt.value = minute_cnt + 1;
+      
+                    if(session_time_out_timer == 0){
+                        session_time_out_timer = setInterval("checkTimeout()", 60000);
+                    }
+
+                    if ("5" != ""){
+                        if ("5" == odd_time + ""){
+                            var SubWin = window.open("/campusweb/theme/default/TimeoutAlert.html", "",
+                                "width=750,height=250,location=0,menubar=0,scrollbars=1,resizable=1,toolbar=0");
+                        }
+                    }
+                } else {
+                    clearInterval(session_time_out_timer);
+                    session_time_out_timer = 0;
+                    document.TopForm.timeout.value = "0";
+                    if (true) {
+                        var msg = "タイムアウトしました。";
+                        if (msg == ""){
+                            msg = "タイムアウトしました。";
+                        }
+                        alert(msg);
+                    }
+                    if (true) {
+                        var SubWin = window.open("/campusweb/theme/default/Timeout.html", "",
+                            "width=750,height=240,location=0,menubar=0,scrollbars=1,resizable=1,toolbar=0");
+                    }
+                }
+            }
+  
+            function initTimeout(){
+                if (true){
+                    document.TopForm.time_cnt.value = "0";
+                    clearInterval(session_time_out_timer);
+                    session_time_out_timer = 0;
+                    checkTimeout();
+                }
+            }
+            
+            function extendSession() {
+                document.TopForm._eventId.value = "extendSession";
+                document.TopForm._flowExecutionKey.value = "_c840D5AD3-F896-6A78-1B5A-30436C9B6C09_k64A3CC82-190F-81D3-4B00-8BF273B3BC1E";
+                document.TopForm.submit();
+            }
+  
+            function dispMsg(){
+            	
+            	if(true){
+                
+                	if ('true' && 
+                        	('false' || 'false' ||
+                        			'true' || '')) {
+                        var href_str = "/campusweb/campussquare.do?"
+                    	    + "&_eventId=displayWarningWindow"
+                    	    + "&_flowExecutionKey=_c840D5AD3-F896-6A78-1B5A-30436C9B6C09_k64A3CC82-190F-81D3-4B00-8BF273B3BC1E";
+                        
+                    	SubWin=window.open(href_str,"messages",
+                		"width=650,height=400,location=yes,menubar=no,scrollbars=no,,toolbar=no");
+                    		SubWin.focus();
+                	}
+                	return false;
+                
+            	}
+            }
+
+            var menu_disp_flg = 1;
+
+            function changeMenu() {
+                mainFrame = parent.document.getElementsByTagName('frameset')['main'];
+                if (menu_disp_flg == 1) {
+                    menu_disp_flg = 0;
+                    mainFrame.cols="0,*";
+                    document.img_menuchange.src='/campusweb/theme/default/image/top_menu_on_on.gif';
+                } else {
+                    menu_disp_flg = 1;
+                    mainFrame.cols="220,*";
+                    document.img_menuchange.src='/campusweb/theme/default/image/top_menu_off_on.gif';
+                }
+                return false;
+            }
+
+            function MenuChangeOver(){
+                if (menu_disp_flg == 1) {
+                    document.img_menuchange.src='/campusweb/theme/default/image/top_menu_off_on.gif';
+                } else {
+                    document.img_menuchange.src='/campusweb/theme/default/image/top_menu_on_on.gif';
+                }
+                return false;
+            }
+
+            function MenuChangeOut(){
+                if (menu_disp_flg == 1) {
+                    document.img_menuchange.src='/campusweb/theme/default/image/top_menu_off_off.gif';
+                } else {
+                    document.img_menuchange.src='/campusweb/theme/default/image/top_menu_on_off.gif';
+                }
+                return false;
+            }
+
+            function changeTopImg(flg){
+                if (flg == 1) {
+                    document.img_top.src="/campusweb/theme/default/image/top_top_on.gif";
+                } else {
+                    document.img_top.src="/campusweb/theme/default/image/top_top_off.gif";
+                }
+            }
+
+            function changePasswordImg(flg) {
+                if (flg == 1) {
+                    document.img_system.src="/campusweb/theme/default/image/top_system_on.gif";
+                } else {
+                    document.img_system.src="/campusweb/theme/default/image/top_system_off.gif";
+                }
+            }
+
+            function showJugyoHyokaEnquete() {
+                var href_str = "/campusweb/campussquare.do?"
+                	    + "&_flowId=ENW0001100-flow";
+                    
+                SubWin=window.open(href_str,"portalSubWin",
+                "width=900,height=900,location=0,menubar=0,scrollbars=1,,toolbar=1");
+                SubWin.focus();
+                return false;
+            }
+
+            function showKyoProEnquete() {
+                var href_str = "/campusweb/campussquare.do?"
+                	    + "&_flowId=ENW0001100-flow";
+                    
+                SubWin=window.open(href_str,"portalSubWin",
+                "width=900,height=900,location=0,menubar=0,scrollbars=1,,toolbar=1");
+                SubWin.focus();
+                return false;
+            }
+
+            function showShushokuSubwin(flowId) {
+                var href_str = "/campusweb/campussquare.do?"
+                	    + "&_flowId=" + flowId;
+                    
+                SubWin=window.open(href_str,"portalSubWin",
+                "width=900,height=900,location=0,menubar=0,scrollbars=1,,toolbar=1");
+                SubWin.focus();
+                return false;
+            }
+
+            function showHandlingOfPersonalInformation() {
+            	var SubWin = window.open("/campusweb/theme/default/HandlingOfPersonalInformation.html", "",
+                "width=800,height=370,location=0,menubar=0,scrollbars=1,resizable=1,toolbar=0");
+            }
+        </script></head>
+
+
+    
+
+        
+    
+    <body class="v47topmenu" onload="initTimeout();dispMsg()" marginwidth="0" marginheight="0">
+        
+        <form name="TopForm" style="margin: 0px; padding: 0px;">
+            <input type="hidden" name="time_cnt" value="2">
+            <input type="hidden" name="disp" value="false">
+            <input type="hidden" name="_eventId" value="">
+            <input type="hidden" name="_flowExecutionKey" value="">
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td>
+                        <table border="0" cellpadding="0" cellspacing="0" align="left">
+                            <tbody><tr>
+                                <td>
+                                
+                                
+                                
+                                    <a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_eventId=menu&amp;_flowExecutionKey=_c840D5AD3-F896-6A78-1B5A-30436C9B6C09_k64A3CC82-190F-81D3-4B00-8BF273B3BC1E" target="_parent" class="logo">
+                                        <img src="./topmenu_logo_momiji.jpg" alt="キャンパスロゴ" border="0" name="img_top" align="left">
+                                    </a>
+                                
+                                
+                                
+                                    
+<!--                                <img src="/campusweb/theme/default/image/topmenu_logo.gif" alt="" hspace="0" vspace="0" align="left">-->
+                                </td>
+                                <td width="10">
+                                </td>
+                                <td valign="top" nowrap="">
+                                    <table width="20" border="0" cellpadding="0" cellspacing="0" hspace="0" vspace="0" align="left" valign="top">
+                                        <tbody><tr><td height="8"><img src="./space.gif" border="0" hspace="0" vspace="0" align="left"></td></tr>
+                                        
+                                        
+                                        <tr><td height="11" nowrap=""> <span class="userhead">ユーザ　　</span><span class="user">田村　みどり</span><span class="userhead">　さん</span><br></td></tr>
+                                        <tr bgcolor="greenyellow"><td height="3"></td></tr>
+                                        <tr><td height="11" nowrap="">
+                                        
+                                        </td></tr>
+                                        <tr><td height="3"><img src="./space.gif" border="0" hspace="0" vspace="0" align="left" alt="スペース">
+                                        </td></tr>
+                                        <tr><td height="4"><img src="./space.gif" border="0" hspace="0" vspace="0" align="left"></td></tr>
+                                        <tr><td height="11" nowrap="">
+                                                
+                                                    <span style="font-size:8pt">&nbsp;&nbsp;タイムアウトまで約&nbsp;<input type="text" name="timeout" id="timeout" value="" size="3" style="background-color: #f0f0f0; border: 1px solid #505050; font-size: 9pt; font-weight: bold; text-align: center;" readonly="">&nbsp;分</span>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table><br>
+                                    <table width="20" border="0" cellpadding="0" cellspacing="0" hspace="0" vspace="0" align="left" valign="top">
+                                    </table>
+                                </td>
+                                <td width="20"><br></td>
+                                <td valign="top" nowrap="">
+                                    <table width="20" border="0" cellpadding="0" cellspacing="0" hspace="0" vspace="0" align="left" valign="top">
+                                        
+                                        
+                                            <tbody><tr>
+                                              <td height="43">
+                                                
+                                                  <img src="./func_check.gif" border="0" hspace="0" vspace="0" align="left"><a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussmart.do?page=main" target="_top">スマホ版</a>
+                                                
+                                              </td>
+                                            </tr>
+                                            <tr><td nowrap=""><a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_c840D5AD3-F896-6A78-1B5A-30436C9B6C09_k64A3CC82-190F-81D3-4B00-8BF273B3BC1E#" class="link" onclick="showHandlingOfPersonalInformation(); return false;">情報システムにおける個人情報を含む教育・学習データの取り扱いについて</a></td></tr>
+                                        
+                                    </tbody></table>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                    <td style="max-width: 250px">
+                      <table border="0" cellpadding="0" cellspacing="0" align="left" width="100%">
+                        
+                        
+                      
+                        
+                        
+                            <tbody><tr>
+                            <td>
+                            
+                            
+                            <font color="#C00000"><b>メッセージ</b></font>
+                            
+                            </td>
+                            </tr>
+
+                            
+                            
+                                
+                                
+                                    <tr>
+                                    <td>
+                                      <a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_c840D5AD3-F896-6A78-1B5A-30436C9B6C09_k64A3CC82-190F-81D3-4B00-8BF273B3BC1E#" class="link" onclick="showJugyoHyokaEnquete(); return false;">授業改善アンケート</a>を行いましょう。
+                                    </td>
+                                    </tr>
+                                
+                            
+                            
+                            
+                            
+                            
+                                                        
+                            
+                                                        
+                            
+                                                        
+                                                         
+                        
+                      
+                      </tbody></table>
+                    </td>
+                    <td align="right" valign="top" nowrap="">
+                        <table width="80" border="0" align="right" cellpadding="0" cellspacing="0">
+                            <tbody><tr>
+                                <td width="100" align="right">
+                                    <a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowId=USW0009100-flow" target="_top" class="logo" onmouseover="document.img_logout.src=&#39;/campusweb/theme/default/image/top_logout_on.jpg&#39;" onmouseout="document.img_logout.src=&#39;/campusweb/theme/default/image/top_logout_off.jpg&#39;">
+                                    <img src="./top_logout_off.jpg" alt="ログアウト" border="0" hspace="5" vspace="5" name="img_logout" align="top"></a>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+        </form>
+        
+    
+
+</body></html>

@@ -1,0 +1,104 @@
+/*
+ *  StyleSheet for Menu
+ */
+
+
+/*********************************************************************
+ * body
+ ********************************************************************/
+
+/* frame */
+body.frame          {   background-color      : #FFFAFA;
+                        margin-left           : 0px;
+                        margin-right          : 0px;
+                        margin-top            : 0px;
+                        margin-bottom         : 0px;
+                        padding-left          : 0px;
+                        padding-right         : 0px;
+                        padding-top           : 0px;
+                        padding-bottom        : 0px;
+                        /*color                 : blue;*/
+                        font-size             : 10pt;
+                    }
+
+/* menu */
+body.menu           {   background-color      : #ffffff;
+                        margin-left           : 0px;
+                        margin-right          : 0px;
+                        margin-top            : 0px;
+                        margin-bottom         : 0px;
+                        padding-left          : 5px;
+                        padding-right         : 0px;
+                        padding-top           : 0px;
+                        padding-bottom        : 0px;
+                        /*color                 : blue;*/
+                        font-size             : 10pt;
+                    }
+
+/* menu and menu input */
+span.menu-title     {   font-size   : 12pt;
+                        font-weight : bold;
+                        color       : white;
+                    }
+
+span.menusub        {   font-size   : 11pt;
+                        /*font-weight : bold;*/
+                        /*color  : blue;*/
+                    }
+
+span.menufunc       {   font-size   : 10pt;
+                        /*font-weight : bold;*/
+                        /*color  : #3030c0;*/
+                    }
+
+/*********************************************************************
+ * table
+ ********************************************************************/
+
+/* menu */
+table.menu-outer    {   background-color      : #FFFFFF;
+                        width                 : 270px;
+                    }
+
+table.menu-inner    {   /*background-color      : #DDDDDD;*/
+						background-color      : #F5F5F5;
+                        color                 : #000000;  /* menu input */
+                        word-wrap   : break-word;
+                        white-space : normal;
+                    }
+table.menu-inner tbody tr td  {
+						            width : 200px;
+                    }
+td.menu-header      {   background-color      : #CCCC99;/*#CCCC99;*/
+                    }
+
+
+/* menu input */
+tr.menuipt-sel      {   background-color      : #99cc99;
+                    }
+
+td.menuipt-tab-sel  {   background-color      : #99cc99;
+                        font-size             : 10pt;
+                        /*font-weight           : bold;*/
+                        color                 : black;
+                    }
+
+td.menuipt-tab      {   background-color      : #cccccc;
+                        font-size             : 10pt;
+                        /*font-weight           : bold;*/
+                    }
+
+/*********************************************************************
+ * link
+ ********************************************************************/
+a:hover             {   color                 : #fffbcd;
+                        background-color      : #2f4b2e;
+                    }
+/*
+a:active            {   color                 : #fffbcd;
+                    }
+a:link              {   color                 : #fffbcd;
+                    }
+a:visited           {   color                 : #ffdf95;
+                    }
+*/
