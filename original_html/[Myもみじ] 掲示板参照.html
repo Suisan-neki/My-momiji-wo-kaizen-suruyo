@@ -1,0 +1,955 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0157)https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        
+        <meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
+
+        
+        
+        <link rel="SHORTCUT ICON" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/theme/default/image/favicon.ico">
+        
+        
+        <meta name="format-detection" content="telephone=no">
+        
+        
+    
+         
+        <title>[Myもみじ] 掲示板参照</title>
+        <link rel="stylesheet" href="./[Myもみじ] 掲示板参照_files/StyleSheet.css" type="text/css">
+        <script type="text/javascript" src="./[Myもみじ] 掲示板参照_files/ScriptColor.js"></script>
+        <script type="text/javascript" src="./[Myもみじ] 掲示板参照_files/Script.js"></script>
+        
+        
+        
+        
+        
+        <link rel="stylesheet" type="text/css" href="./[Myもみじ] 掲示板参照_files/jquery-ui-1.8.19.custom.css">
+        
+        
+        <script type="text/javascript" src="./[Myもみじ] 掲示板参照_files/jquery.min.js"></script>
+        <script type="text/javascript" src="./[Myもみじ] 掲示板参照_files/jquery-ui-1.8.19.custom.min.js"></script>
+        <script type="text/javascript" src="./[Myもみじ] 掲示板参照_files/portal_common.js"></script>
+        
+    <script language="JavaScript" type="text/javascript">
+<!--
+  function dispKeijiReference(eventId, keijitype, genrecd, seqNo) {
+
+    var href_str = "/campusweb/campussquare.do"
+    + "?_eventId=" + eventId
+    + "&_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8"
+	+ "&keijitype=" + keijitype
+	+ "&genrecd=" + genrecd
+	+ "&seqNo=" + seqNo;
+
+    SubWin=window.open(href_str,"KeijiReferenceWindow",
+    "width=550,height=650,location=0,menubar=0,scrollbars=1,resizable=1,toolbar=1");
+
+    SubWin.focus();
+
+    return false;
+}
+  function dispShidogakuseiList(kyokancd) {
+
+    var href_str = "/campusweb/campussquare.do"
+    + "?_flowId=KJW0001700-flow"
+	+ "&calledFlow=KJW0001100-flow"
+	+ "&kyokancd=" + kyokancd;
+
+    SubWin=window.open(href_str, "_self");
+    SubWin.focus();
+
+    return false;
+}
+  function kidokuAll(genrenm,keijitype,genrecd,keijiTaFlg) {
+    if(confirm(genrenm + 'を既読に変更します。')) {
+        document.inputForm._eventId.value = 'kidokuAll';
+        document.inputForm.keijitype.value = keijitype;
+        document.inputForm.genrecd.value = genrecd;
+        document.inputForm.keijiTaFlg.value = keijiTaFlg;
+        document.inputForm.submit();
+    }
+
+    return false;
+  }
+
+// -->
+    </script><style id="bt-default-injected-css">
+   
+[bt-global-status="dual"] [bt-translate-status]:not([bt-translate-status="translated"]) .bt-copied-node-wrapper {
+  display: none !important;
+}
+
+.bt-global-loading {
+    display: inline-block !important;
+    width: 12px !important;
+    height: 12px !important;
+    border: 2px solid #f3f3f3;
+    border-top: 1px solid #aaa;
+    border-radius: 50%;
+    animation: bt-global-spin 1s linear infinite;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+@keyframes bt-global-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bt-error-wrapper {    
+    position: relative;
+    display: inline-flex;
+    padding: 6px;
+    margin: 0 8px;
+    white-space: nowrap;
+    font-size: 16px;
+    align-items: center;
+    color: #00AAB5;
+    vertical-align: middle;   
+}
+
+.bt-error-wrapper font {
+  display: flex;
+  align-items: center;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.bt-error-wrapper svg {
+  width: 0.8em;
+  height: 0.8em;
+  margin:  0 4px;
+}
+
+.bt-global-retry svg:hover {
+    animation: bt-global-spin 1s ease infinite;
+}
+
+.bt-block-wrapper {
+    margin: 8px 0 !important;
+    display: inline-block;
+}
+
+.bt-inline-wrapper {
+    margin: 0 8px !important;
+}
+
+.bt-max-height-unset {
+    max-height: unset !important;
+}
+
+.bt-webkit-line-clamp-unset {
+    -webkit-line-clamp: unset !important;
+}
+
+
+:root{
+    --font--dash--border:#59c1bd;
+    --font--underLine-border:#72ece9;
+    --font-marker--bg:0,0,0;
+    --font--blockquote--left--bg:#FF0000;
+    --font--spit--line--border: #000000;
+}
+
+.translatedTextContainer{
+    margin: 8px 0 !important;
+    display: inline-block;
+}
+
+.fontFamilyDashRest{
+    background: linear-gradient(to right, var(--font--dash--border) 0%, var(--font--dash--border) 50%, transparent 50%, transparent 100%) repeat-x left bottom;
+    background-size: 8px 2px;
+    padding-bottom: 2px;
+}
+
+.fontFamilyUnderlineRest{
+    border-bottom: 1px solid var(--font--underLine-border) !important;
+}
+
+.fontFamilyMaskRest{
+    filter: blur(5px) !important;
+    transition: filter 0.3s ease !important;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.fontFamilyMaskRest:hover{
+    filter: none !important;
+}
+
+.fontFamilySpitLineRest{
+    color: #f50a0a;
+}
+
+.fontFamilySpitLineRest::before{
+    content: "";
+    display: block;
+    max-width: 80px;
+    width: 10%;
+    border-top: 1px dashed var(--font--spit--line--border);
+    padding-top: 8px;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.fontFamilyMarkerReset{
+    background:
+            linear-gradient(to right, rgba(var(--font-marker--bg), 0.1), rgba(var(--font-marker--bg), 0.9) 3%, rgba(var(--font-marker--bg), 0.9) 35%, rgba(var(--font-marker--bg), 0.9) 70%, rgba(var(--font-marker--bg), 0.8) 95%, rgba(var(--font-marker--bg), 0.3));
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.fontFamilyBlockQuoteReset{
+    border-left: 4px solid var(--font--blockquote--left--bg) !important;
+    padding-left: 12px !important;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+  </style></head>
+
+
+    
+
+    
+    
+    
+    <body>
+
+    
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+     <table border="0" cellspacing="0" cellpadding="0" width="100%" class="title">
+        <tbody><tr>
+            <td height="23">
+                
+                
+                    
+                    
+                    
+                    
+                        <img src="./[Myもみじ] 掲示板参照_files/func_refer4.gif" border="0" hspace="5" align="left"><img src="./[Myもみじ] 掲示板参照_files/space.gif" width="5" height="1" border="0" hspace="0" vspace="0" align="left">掲示板参照
+                    
+                
+            </td>
+        </tr>
+     </tbody></table>
+
+    <form name="TimeoutForm" style="margin: 0px; padding: 0px;">
+        <input type="hidden" name="status" value="0">
+    </form>
+    
+
+
+    
+    
+
+        
+        
+        
+        
+        
+        
+            <br>
+          
+                    <table width="100%" class="keiji-block">
+                    <tbody><tr><td height="20" colspan="3"><b>&nbsp;&nbsp;未読一覧</b></td></tr>
+                </tbody></table>
+            <br>
+            <br>
+            <form id="keijiReferForm" method="post" action="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do">
+                <input type="hidden" name="_flowExecutionKey" value="_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8">
+                <b>未読が11件あります。</b>&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="_eventId_getMidoku" value="更新">
+            </form>
+
+          
+        
+          
+            <p>
+                <b>●詳細を参照するには「表題」をクリックしてください。</b>
+        		
+                </p><p>
+                </p><table border="1" class="normal">
+<thead>
+<tr>
+<th class="keiji-input" width="130">
+掲載日時</th>
+<th class="keiji-input" width="200">
+表題</th>
+<th class="keiji-input" width="100">
+ジャンル</th>
+<th class="keiji-input" width="100">
+所属</th>
+<th class="keiji-input" width="100">
+氏名</th>
+<th class="keiji-input" width="100">
+掲示期間</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+2025/12/1 16:18:58</td>
+<td>
+
+                        <a class="keiji" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8#" onclick="dispKeijiReference(&#39;displayMidoku&#39;,&#39;3&#39;,&#39;1&#39;,&#39;295832&#39;); return false;">【学部2年生の皆さんへ】【広大の先輩と話そう】12/17(水)対面開催「内定者との座談会～先輩に聞く就活のあれこれ～」 </a>
+                    </td>
+<td>
+
+                        個人掲示/Personal Information
+                    </td>
+<td>
+
+                        グローバルキャリアデザインセンター/Global Career Design Center
+                    </td>
+<td>
+
+                        鈴木　美咲/SUZUKI MISAKI
+                    </td>
+<td>
+
+                        2025/12/1から<br>
+                        2025/12/17まで
+                    </td>
+</tr>
+<tr>
+<td>
+2025/11/26 15:10:15</td>
+<td>
+
+                        <a class="keiji" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8#" onclick="dispKeijiReference(&#39;displayMidoku&#39;,&#39;3&#39;,&#39;1&#39;,&#39;295626&#39;); return false;">【12/3（水）正午まで！】2025年度後期START/START+プログラム インド 参加者募集/Call for Applications for START/START+ Program 2nd Semester AY2025</a>
+                    </td>
+<td>
+
+                        個人掲示/Personal Information
+                    </td>
+<td>
+
+                        留学交流グループ（留学）/Global Exchange G (Study Abroad)
+                    </td>
+<td>
+
+                        中村　あかり/NAKAMURA AKARI
+                    </td>
+<td>
+
+                        2025/11/26から<br>
+                        2025/12/3まで
+                    </td>
+</tr>
+<tr>
+<td>
+2025/11/26 09:05:35</td>
+<td>
+
+                        <a class="keiji" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8#" onclick="dispKeijiReference(&#39;displayMidoku&#39;,&#39;3&#39;,&#39;1&#39;,&#39;295560&#39;); return false;">令和７年度後期（４ターム）履修手続について </a>
+                    </td>
+<td>
+
+                        個人掲示/Personal Information
+                    </td>
+<td>
+
+                        霞地区運営支援部学生支援グループ/(Kasumi Campus) Student Support G
+                    </td>
+<td>
+
+                        山田　花子/YAMADA HANAKO
+                    </td>
+<td>
+
+                        2025/11/26から<br>
+                        2025/12/9まで
+                    </td>
+</tr>
+<tr>
+<td>
+2025/11/12 16:38:44</td>
+<td>
+
+                        <a class="keiji" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8#" onclick="dispKeijiReference(&#39;displayMidoku&#39;,&#39;3&#39;,&#39;1&#39;,&#39;295143&#39;); return false;">【全員回答必須です！】　安否確認訓練について　【Please respond】Safety Confirmation Drill</a>
+                    </td>
+<td>
+
+                        個人掲示/Personal Information
+                    </td>
+<td>
+
+                        霞地区運営支援部学生支援グループ/(Kasumi Campus) Student Support G
+                    </td>
+<td>
+
+                        山田　花子/YAMADA HANAKO
+                    </td>
+<td>
+
+                        2025/11/12から<br>
+                        2025/12/12まで
+                    </td>
+</tr>
+<tr>
+<td>
+2025/11/10 17:30:54</td>
+<td>
+
+                        <a class="keiji" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8#" onclick="dispKeijiReference(&#39;displayMidoku&#39;,&#39;3&#39;,&#39;1&#39;,&#39;295015&#39;); return false;">【2025】期末試験の実施について（告示）　Notice Regarding Final Exams</a>
+                    </td>
+<td>
+
+                        個人掲示/Personal Information
+                    </td>
+<td>
+
+                        霞地区運営支援部学生支援グループ/(Kasumi Campus) Student Support G
+                    </td>
+<td>
+
+                        山田　花子/YAMADA HANAKO
+                    </td>
+<td>
+
+                        2025/11/10から<br>
+                        2025/12/17まで
+                    </td>
+</tr>
+<tr>
+<td>
+2025/11/10 17:28:39</td>
+<td>
+
+                        <a class="keiji" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8#" onclick="dispKeijiReference(&#39;displayMidoku&#39;,&#39;3&#39;,&#39;1&#39;,&#39;295017&#39;); return false;">３タームの期末試験について（歯学部専門教育科目）　Implementation Method of 3rd term final exam</a>
+                    </td>
+<td>
+
+                        個人掲示/Personal Information
+                    </td>
+<td>
+
+                        霞地区運営支援部学生支援グループ/(Kasumi Campus) Student Support G
+                    </td>
+<td>
+
+                        山田　花子/YAMADA HANAKO
+                    </td>
+<td>
+
+                        2025/11/10から<br>
+                        2025/12/17まで
+                    </td>
+</tr>
+<tr>
+<td>
+2025/11/5 18:21:27</td>
+<td>
+
+                        <a class="keiji" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8#" onclick="dispKeijiReference(&#39;displayMidoku&#39;,&#39;3&#39;,&#39;1&#39;,&#39;294806&#39;); return false;">【回答願います！】　安否確認訓練について　【Please respond】Safety Confirmation Drill</a>
+                    </td>
+<td>
+
+                        個人掲示/Personal Information
+                    </td>
+<td>
+
+                        霞地区運営支援部学生支援グループ/(Kasumi Campus) Student Support G
+                    </td>
+<td>
+
+                        山田　花子/YAMADA HANAKO
+                    </td>
+<td>
+
+                        2025/11/5から<br>
+                        2025/12/5まで
+                    </td>
+</tr>
+<tr>
+<td>
+2025/11/5 13:19:08</td>
+<td>
+
+                        <a class="keiji" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8#" onclick="dispKeijiReference(&#39;displayMidoku&#39;,&#39;3&#39;,&#39;1&#39;,&#39;294791&#39;); return false;">11/5（水）開始！　『授業改善アンケート』/Information of questionnaire beginning</a>
+                    </td>
+<td>
+
+                        個人掲示/Personal Information
+                    </td>
+<td>
+
+                        教育室教育支援グループ（教育評価・ＦＤ担当）/Education Support G (Evaluation/FD)
+                    </td>
+<td>
+
+                        佐藤　太郎/SATO TARO
+                    </td>
+<td>
+
+                        2025/11/5から<br>
+                        2025/12/5まで
+                    </td>
+</tr>
+<tr>
+<td>
+2025/10/6 16:26:55</td>
+<td>
+
+                        <a class="keiji" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8#" onclick="dispKeijiReference(&#39;displayMidoku&#39;,&#39;3&#39;,&#39;1&#39;,&#39;293389&#39;); return false;">【動画配信中】9/29、9/30開催　大学院進学を考えるセミナー</a>
+                    </td>
+<td>
+
+                        個人掲示/Personal Information
+                    </td>
+<td>
+
+                        グローバルキャリアデザインセンター/Global Career Design Center
+                    </td>
+<td>
+
+                        鈴木　美咲/SUZUKI MISAKI
+                    </td>
+<td>
+
+                        2025/10/3から<br>
+                        2026/3/31まで
+                    </td>
+</tr>
+<tr>
+<td>
+2025/7/29 17:29:57</td>
+<td>
+
+                        <a class="keiji" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8#" onclick="dispKeijiReference(&#39;displayMidoku&#39;,&#39;3&#39;,&#39;1&#39;,&#39;290529&#39;); return false;">【重要】霞キャンパスの皆さんへの注意喚起（騒音・喫煙問題）</a>
+                    </td>
+<td>
+
+                        個人掲示/Personal Information
+                    </td>
+<td>
+
+                        霞地区運営支援部学生支援グループ/(Kasumi Campus) Student Support G
+                    </td>
+<td>
+
+                        高橋　健太/TAKAHASHI KENTA
+                    </td>
+<td>
+
+                        2025/7/29から<br>
+                        2026/3/31まで
+                    </td>
+</tr>
+<tr>
+<td>
+2025/7/1 16:27:40</td>
+<td>
+
+                        <a class="keiji" href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8#" onclick="dispKeijiReference(&#39;displayMidoku&#39;,&#39;3&#39;,&#39;1&#39;,&#39;289304&#39;); return false;">【Student health checkup】Notice of posting results on the web site and issuance of health checkup certificate by automatic issuing machine (installed in each school)</a>
+                    </td>
+<td>
+
+                        個人掲示/Personal Information
+                    </td>
+<td>
+
+                        保健管理センター/Health Service Center
+                    </td>
+<td>
+
+                        伊藤　さくら/ITO SAKURA
+                    </td>
+<td>
+
+                        2025/7/1から<br>
+                        2026/3/31まで
+                    </td>
+</tr>
+</tbody>
+</table>
+
+            <p></p>
+          
+
+        
+        <br>
+            <table width="100%" class="keiji-block">
+                <tbody><tr><td><b>&nbsp;&nbsp;ジャンル一覧</b></td></tr>
+            </tbody></table>
+        <br>
+        
+        <p>
+            </p><form id="keijiReferForm" name="inputForm" method="post" action="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do">
+                <input type="hidden" name="_flowExecutionKey" value="_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8">
+                <input type="hidden" name="_eventId" value="">
+                <input type="hidden" name="keijitype" value="">
+                <input type="hidden" name="genrecd" value="">
+                <input type="hidden" name="keijiTaFlg" value="">
+                <b>●詳細を参照するには「ジャンル」をクリックしてください。</b>
+                <table border="1" class="normal">
+                    <tbody><tr>
+                        <th width="350" class="keiji-input" height="25">ジャンル</th>
+                        <th width="100" class="keiji-input">件数</th>
+                        <th width="100" class="keiji-input">一括既読</th>
+                    </tr>
+                    
+                    
+                        
+                        
+                            <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                
+                                <td><a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=displayJugyo">授業掲示板</a></td>
+                                <td align="center">-</td>
+                                <td align="center">-</td>
+                            </tr>
+                            
+                                <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                    
+                                    <td>&nbsp;&nbsp;<a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=dispKeijiListGenre&amp;keijitype=1&amp;genrecd=7&amp;keijiTaFlg=0">授業掲示/Class Information</a></td>
+                                    <td align="center">
+
+                                        
+                                        <font color="#C00000">
+
+                                            1件
+                                            
+                                                (未読0件)
+                                            
+                                        </font>
+                                    </td>
+                                    <td align="center">
+                                        
+                                            
+                                            
+                                                -
+                                            
+                                        
+                                    </td>
+                                </tr>
+                            
+                                <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                    
+                                    <td>&nbsp;&nbsp;<a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=dispKeijiListGenre&amp;keijitype=1&amp;genrecd=7&amp;keijiTaFlg=1">【TA担当】授業掲示/【TA】Class Information</a></td>
+                                    <td align="center">
+
+                                        
+                                        <font color="#C00000">
+
+                                            0件
+                                            
+                                                (未読0件)
+                                            
+                                        </font>
+                                    </td>
+                                    <td align="center">
+                                        
+                                            
+                                            
+                                                -
+                                            
+                                        
+                                    </td>
+                                </tr>
+                            
+                        
+                    
+                    
+                    
+                        
+                        
+                            <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                
+                                <td><a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=displayOshirase">一般掲示板</a></td>
+                                <td align="center">-</td>
+                                <td align="center">-</td>
+                            </tr>
+                            
+                                <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                    
+                                    <td>&nbsp;&nbsp;<a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=dispKeijiListGenre&amp;keijitype=3&amp;genrecd=1&amp;keijiTaFlg=0">個人掲示/Personal Information</a></td>
+                                    <td align="center">
+
+                                        
+                                        <font color="#C00000">
+
+                                            18件
+                                            
+                                            
+                                                (未読11件)
+                                            
+                                        </font>
+                                    </td>
+                                    <td align="center">
+                                        
+                                            
+                                            
+                                                -
+                                            
+                                        
+                                    </td>
+                                </tr>
+                            
+                                <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                    
+                                    <td>&nbsp;&nbsp;<a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=dispKeijiListGenre&amp;keijitype=4&amp;genrecd=44&amp;keijiTaFlg=0">学長メッセージ/President's Messages</a></td>
+                                    <td align="center">
+
+                                        
+                                        <font color="#C00000">
+
+                                            60件
+                                            
+                                            
+                                        </font>
+                                    </td>
+                                    <td align="center">
+                                        
+                                            
+                                            
+                                                -
+                                            
+                                        
+                                    </td>
+                                </tr>
+                            
+                                <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                    
+                                    <td>&nbsp;&nbsp;<a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=dispKeijiListGenre&amp;keijitype=4&amp;genrecd=3&amp;keijiTaFlg=0">学部・研究科掲示/Message from your Faculty, School</a></td>
+                                    <td align="center">
+
+                                        
+                                        <font color="#C00000">
+
+                                            27件
+                                            
+                                            
+                                        </font>
+                                    </td>
+                                    <td align="center">
+                                        
+                                            
+                                                
+                                                
+                                                
+                                                <input type="button" value="一括既読" onclick="kidokuAll(&#39;学部・研究科掲示/Message from your Faculty, School&#39;,&#39;4&#39;,&#39;3&#39;,&#39;&#39;);">
+                                            
+                                            
+                                        
+                                    </td>
+                                </tr>
+                            
+                                <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                    
+                                    <td>&nbsp;&nbsp;<a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=dispKeijiListGenre&amp;keijitype=4&amp;genrecd=4&amp;keijiTaFlg=0">教養教育掲示/General Education Information</a></td>
+                                    <td align="center">
+
+                                        
+                                        <font color="#C00000">
+
+                                            4件
+                                            
+                                            
+                                        </font>
+                                    </td>
+                                    <td align="center">
+                                        
+                                            
+                                                
+                                                
+                                                
+                                                <input type="button" value="一括既読" onclick="kidokuAll(&#39;教養教育掲示/General Education Information&#39;,&#39;4&#39;,&#39;4&#39;,&#39;&#39;);">
+                                            
+                                            
+                                        
+                                    </td>
+                                </tr>
+                            
+                                <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                    
+                                    <td>&nbsp;&nbsp;<a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=dispKeijiListGenre&amp;keijitype=4&amp;genrecd=49&amp;keijiTaFlg=0">大学院共通教育掲示/ Common Graduate Courses</a></td>
+                                    <td align="center">
+
+                                        
+                                        <font color="#C00000">
+
+                                            0件
+                                            
+                                            
+                                        </font>
+                                    </td>
+                                    <td align="center">
+                                        
+                                            
+                                                
+                                                
+                                                
+                                                <input type="button" value="一括既読" onclick="kidokuAll(&#39;大学院共通教育掲示/ Common Graduate Courses&#39;,&#39;4&#39;,&#39;49&#39;,&#39;&#39;);">
+                                            
+                                            
+                                        
+                                    </td>
+                                </tr>
+                            
+                                <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                    
+                                    <td>&nbsp;&nbsp;<a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=dispKeijiListGenre&amp;keijitype=4&amp;genrecd=5&amp;keijiTaFlg=0">進路・就職掲示/Message from the Career Center</a></td>
+                                    <td align="center">
+
+                                        
+                                        <font color="#C00000">
+
+                                            41件
+                                            
+                                            
+                                        </font>
+                                    </td>
+                                    <td align="center">
+                                        
+                                            
+                                                
+                                                
+                                                
+                                                <input type="button" value="一括既読" onclick="kidokuAll(&#39;進路・就職掲示/Message from the Career Center&#39;,&#39;4&#39;,&#39;5&#39;,&#39;&#39;);">
+                                            
+                                            
+                                        
+                                    </td>
+                                </tr>
+                            
+                                <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                    
+                                    <td>&nbsp;&nbsp;<a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=dispKeijiListGenre&amp;keijitype=4&amp;genrecd=6&amp;keijiTaFlg=0">拾得物掲示/Lost and Found Notification</a></td>
+                                    <td align="center">
+
+                                        
+                                        <font color="#C00000">
+
+                                            29件
+                                            
+                                            
+                                        </font>
+                                    </td>
+                                    <td align="center">
+                                        
+                                            
+                                                
+                                                
+                                                
+                                                <input type="button" value="一括既読" onclick="kidokuAll(&#39;拾得物掲示/Lost and Found Notification&#39;,&#39;4&#39;,&#39;6&#39;,&#39;&#39;);">
+                                            
+                                            
+                                        
+                                    </td>
+                                </tr>
+                            
+                                <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                    
+                                    <td>&nbsp;&nbsp;<a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=dispKeijiListGenre&amp;keijitype=4&amp;genrecd=2&amp;keijiTaFlg=0">お知らせ掲示/Notification</a></td>
+                                    <td align="center">
+
+                                        
+                                        <font color="#C00000">
+
+                                            159件
+                                            
+                                            
+                                        </font>
+                                    </td>
+                                    <td align="center">
+                                        
+                                            
+                                                
+                                                
+                                                
+                                                <input type="button" value="一括既読" onclick="kidokuAll(&#39;お知らせ掲示/Notification&#39;,&#39;4&#39;,&#39;2&#39;,&#39;&#39;);">
+                                            
+                                            
+                                        
+                                    </td>
+                                </tr>
+                            
+                                <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+                                    
+                                    <td>&nbsp;&nbsp;<a href="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do?_flowExecutionKey=_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8&amp;_eventId=dispKeijiListGenre&amp;keijitype=4&amp;genrecd=48&amp;keijiTaFlg=0">新型コロナウイルス関連情報/Novel Coronavirus</a></td>
+                                    <td align="center">
+
+                                        
+                                        <font color="#C00000">
+
+                                            0件
+                                            
+                                            
+                                        </font>
+                                    </td>
+                                    <td align="center">
+                                        
+                                            
+                                            
+                                                -
+                                            
+                                        
+                                    </td>
+                                </tr>
+                            
+                        
+                    
+                </tbody></table>
+            </form>
+        <p></p>
+        
+        <br>
+        
+            <form id="keijiReferForm" method="post" action="https://www.momiji.hiroshima-u.ac.jp/campusweb/campussquare.do">
+                <input type="hidden" name="_flowExecutionKey" value="_cEB56F3B4-315A-1080-C8AE-E5F375A2127E_kBC3653FE-1829-8703-319F-22E0D5998CC8">
+                <input type="submit" name="_eventId_search" value="掲示情報検索">
+            </form>
+        
+        
+
+
+
+
+
+
+
+
+    
+     <p>
+         </p><table border="0" cellspacing="0" cellpadding="0" width="100%" class="title-footer">
+             <tbody><tr>
+                 <td align="right">
+                                           
+                     <img src="./[Myもみじ] 掲示板参照_files/footer_copyright.gif">
+                 </td>
+             </tr>
+         </tbody></table>
+         <!-- メッセージ通知 -->
+          
+     <p></p>
+
+
+
+    
+</body></html>
